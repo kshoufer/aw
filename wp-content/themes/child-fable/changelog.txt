@@ -1,0 +1,4 @@
+updated 12-20-2013
+- Added phone number in header.phpodes.php
+- Replace facebook.png with new version
+- chaged drop-caps to be off by default in style.css
