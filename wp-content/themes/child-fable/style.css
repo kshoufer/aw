@@ -72,12 +72,29 @@ display: none;
     display: none;
 }
 
-@media only screen and ( max-width: 767px ) {
-#top-menu, #et-social-icons, #et-search-form {
-    display: block;
+#et-social-footer-icons a:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 2em;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+    content: '\e601';
 }
 
-#et-social-icons {
+@media only screen and ( max-width: 767px ) {
+
+#top-menu, #et-social-icons, #et-search-form {
+    display: none;
+}
+
+#et-social-footer-icons {
     float: none;
     margin: auto;
 }
