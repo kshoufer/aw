@@ -14,24 +14,41 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'aw');
-
-/** MySQL database username */
-define('DB_USER', 'root');
-
-/** MySQL database password */
-define('DB_PASSWORD', '');
-
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+/*added logic by Ken Shoufer*/
+if ($_SERVER['SERVER_NAME'] === "localhost") {
+    // ** MySQL settings - You can get this info from your web host ** //
+    /** The name of the database for WordPress */
+    define('DB_NAME', 'aw');
+    /** MySQL database username */
+    define('DB_USER', 'root');
+    /** MySQL database password */
+    define('DB_PASSWORD', '');
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+    /** Database Charset to use in creating database tables. */
+    define('DB_CHARSET', 'utf8');
+    /** The Database Collate type. Don't change this if in doubt. */
+    define('DB_COLLATE', '');
+    define('WP_HOME','http://localhost:/aw');
+    define('WP_SITEURL','http://localhost:/aw');
+} else {
+    // ** MySQL settings - You can get this info from your web host ** //
+    /** The name of the database for WordPress */
+    define('DB_NAME', 'backcou2_aw');
+    /** MySQL database username */
+    define('DB_USER', 'backcou2_bcr');
+    /** MySQL database password */
+    define('DB_PASSWORD', 'tR(SW28(P1');
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+    /** Database Charset to use in creating database tables. */
+    define('DB_CHARSET', 'utf8');
+    /** The Database Collate type. Don't change this if in doubt. */
+    define('DB_COLLATE', '');
+    define('WP_HOME','http://dev1.ken-shoufer.com/aw');
+    define('WP_SITEURL','http://dev1.ken-shoufer.com/aw');
+};
+/*end added logic*/
 
 /**#@+
  * Authentication Unique Keys and Salts.
